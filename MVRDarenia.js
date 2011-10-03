@@ -10,14 +10,14 @@
 
 "mapping": {
     "from": {
-      "fields": [  {"column": "daritel", "name": "label", "datatype": "constant"}  ],
+      "fields": [  {"column": "daritel", "name": "label", "datatype": "string"}  ],
       "type": "entity",
       "description": "Дарено от",
       "label": "Дарител"
     },
 
     "to": {
-      "fields": [  {"column": "nadaren", "name": "label", "datatype": "constant"}   ],
+      "fields": [  {"column": "nadaren", "name": "label", "datatype": "string"}   ],
       "type": "entity",
       "description": "Дарено на",
       "label": "Надарен"
@@ -79,7 +79,7 @@
       "name": "default",
       "dimension": "dataset",
       "breakdown": "predmet",
-      "filters": {"name": "MVRDarenia:predmet"}
+      "filters": {"name": "MVRDarenia"}
     },
     {
       "entity": "dataset",
@@ -87,15 +87,15 @@
       "name": "default",
       "dimension": "dataset",
       "breakdown": "daritel",
-      "filters": {"name": "MVRDarenia:daritel"}
+      "filters": {"name": "MVRDarenia"}
     },
   {
       "entity": "dataset",
-      "label": "Дарители",
+      "label": "Надарени",
       "name": "default",
       "dimension": "dataset",
       "breakdown": "nadaren",
-      "filters": {"name": "MVRDarenia:nadaren"}
+      "filters": {"name": "MVRDarenia"}
     }
 
 
